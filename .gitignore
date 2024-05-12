@@ -6,6 +6,7 @@ migrations/versions/__pycache__/
 
 .venv
 .env
+.env_dev
 env/
 venv/
 ENV/

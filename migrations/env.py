@@ -5,9 +5,17 @@ from sqlalchemy import pool
 
 from alembic import context
 
+import os
+import sys
+
+
+sys.path.append(os.path.join(sys.path[0], 'src'))
+
+
 from config import DB_HOST, DB_PORT, DB_USER, DB_NAME, DB_PASS
 from db import Base
 from user_auth.models import *
+from salary.models import *
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
