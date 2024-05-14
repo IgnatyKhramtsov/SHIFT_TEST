@@ -1,6 +1,6 @@
 import uuid
 
-from sqlalchemy import Column, String, ARRAY
+from sqlalchemy import Column, String
 from sqlalchemy.orm import Mapped, mapped_column
 from sqlalchemy.dialects.postgresql import UUID
 

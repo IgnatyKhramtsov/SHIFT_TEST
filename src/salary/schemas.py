@@ -1,12 +1,12 @@
 import uuid
-from datetime import datetime, timedelta, date
+from datetime import date
 
 from pydantic import BaseModel
 
 
 class SalaryCreate(BaseModel):
     salary_level: int
-    promotion_date: date  #time.timestamp = (datetime.now() + timedelta(weeks=26)).timestamp()
+    promotion_date: date
 
 
 class SalaryCreateUUID(SalaryCreate):

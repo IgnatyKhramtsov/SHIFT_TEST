@@ -15,5 +15,5 @@ class Salary(Base):
 
     id: Mapped[intpk]
     salary_level: Mapped[int]
-    promotion_date: Mapped[date] = mapped_column(nullable=True)  # = mapped_column(server_default=text("TIMEZONE('utc', now()) + INTERVAL '6 months'"))
+    promotion_date: Mapped[date] = mapped_column(nullable=True)
     user_id: Mapped[UUID] = mapped_column(ForeignKey("user.user_id", ondelete="SET NULL"), nullable=True)

@@ -21,4 +21,4 @@ def ping():
 
 
 if __name__ == "__main__":
-    uvicorn.run(f"main:app", port=8001, reload=True)
+    uvicorn.run(f"main:app", port=8000, reload=True)

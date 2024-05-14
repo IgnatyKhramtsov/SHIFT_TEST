@@ -1,13 +1,12 @@
 from typing import Annotated
 
-from fastapi import APIRouter, Security, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException
 from fastapi.encoders import jsonable_encoder
 from pydantic import EmailStr
 from fastapi.responses import JSONResponse
-from sqlalchemy.ext.asyncio import AsyncSession
 from starlette.status import HTTP_201_CREATED
 
-from db import get_async_session, SessionDep
+from db import SessionDep
 from repositories.user import UserRepository
 from services.users import UserService
 from user_auth.auth_user import get_current_user

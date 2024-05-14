@@ -11,7 +11,6 @@ from repositories.user import UserRepository
 
 from db import SessionDep
 from services.users import UserService
-# from user.auth import oauth2_scheme
 from user_auth.hasher import verify_password
 from user_auth.models import User
 from user_auth.schemas import TokenData
