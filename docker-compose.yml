@@ -13,7 +13,7 @@ services:
     expose:
       - 1221
     env_file:
-      - .env
+      - .env_dev
     networks:
       - custom
 
@@ -21,7 +21,7 @@ services:
     build:
       context: .
     env_file:
-      - .env
+      - .env_dev
     container_name: shift_app
     command: ["/SHIFT_app/docker/app.sh"]
     ports:
